@@ -1,0 +1,18 @@
+{
+  "name": "angular-shots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "john romulo",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "bootstrap": "^4.0.0"
+  }
+}
