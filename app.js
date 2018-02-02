@@ -1,2 +1,19 @@
+(() =>{
+    'use strict';
+    
+    angular.module('app',[
+        'ngRoute','ngResource',
+        'app.shotsModule'
+    ])
+    .run(['$rootScope',appRun])
+    .config(['$routeProvider','$locationProvider',configApp]);
 
-var app = angular.module('app',[])
+    function appRun($rootScope){
+        
+    }
+
+    function configApp($routeProvider,$locationProvider) {
+        
+    }
+
+})();	

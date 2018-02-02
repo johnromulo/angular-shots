@@ -1,0 +1,71 @@
+shots-page .background-page {
+  background: #e6e6e6;
+  width: 100%;
+  height: 100vh; }
+
+shots-page .container-card-texto {
+  padding: 0rem 0.5rem;
+  position: absolute;
+  bottom: -0.05rem;
+  left: -0.05rem;
+  border-radius: 2px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0, transparent 100%);
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  width: 18rem;
+  height: 3.8rem; }
+
+shots-page .title {
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-weight: 100;
+  color: white;
+  font-family: 'Avenir' !important;
+  font-size: 1.1rem;
+  margin-right: 0.5rem; }
+
+shots-page .img-card {
+  background-image: url("https://www.thamesvalley.police.uk/about-us/who-we-are/departments/");
+  width: 15.99rem;
+  height: 12.4rem;
+  border-radius: 2px; }
+
+shots-page .card {
+  object-fit: cover;
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 19.5rem;
+  width: 18rem;
+  margin: 1rem;
+  position: relative;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  animation: fadeIn 1s ease-in both;
+  cursor: pointer; }
+
+shots-page .card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+shots-page .card:nth-child(2) {
+  animation-delay: 0.5s; }
+
+shots-page .card:nth-child(3) {
+  animation-delay: 1s; }
+
+shots-page .card:nth-child(4) {
+  animation-delay: 1.5s; }
+
+shots-page .card:nth-child(5) {
+  animation-delay: 2s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+shots-datail-page .teste {
+  color: red; }

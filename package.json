@@ -13,6 +13,27 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.8",
-    "bootstrap": "^4.0.0"
+    "angular-font-awesome": "^3.1.2",
+    "angular-resource": "^1.6.8",
+    "angular-route": "^1.6.8",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-sass": "^3.1.0",
+    "gulp-concat": "*",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat-util": "*",
+    "gulp-inject": "^4.3.0",
+    "gulp-strip-debug": "*",
+    "gulp-uglify": "*",
+    "gulp-uglify-es": "*",
+    "load-grunt-tasks": "~0.6.0",
+    "run-sequence": "^2.2.1",
+    "time-grunt": "~0.4.0",
+    "yargs": "^11.0.0"
   }
 }

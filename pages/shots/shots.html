@@ -1,0 +1,16 @@
+<shots-page>
+    <div class="background-page">
+        <div class="card" ng-repeat="shot in shots" style="background-image: url('{{shot.images.normal}}')">
+            <div>
+                <a href="#/shot/{{shot.id}}" class="container-card-texto">
+                    <div class="title">
+                        {{shot.title}}
+                    </div>
+                    <div class="title">
+                        <i class="fa fa-eye" aria-hidden="true"></i> {{shot.views_count}}
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</shots-page>
