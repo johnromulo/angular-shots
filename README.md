@@ -20,4 +20,4 @@ Implementar uma aplicação completamente client-side, que consulte a API do Dri
 ## Build Produçao
 
     $ gulp sass:watch //Para buildar automaticamente os arquivos de .scss para .css
-    $ gulp managerjs //Para Minificar os aqruivos .js e adicioná-lo ao index.html
+    $ gulp managerjs --prod //Para Minificar os aqruivos .js e adicioná-lo ao index.html
