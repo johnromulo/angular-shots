@@ -1,26 +1,35 @@
 shots-page{
-    .background-page{
-        background:  rgba(230, 230, 230, 1);
-        width: 100%;
-        height: 100vh;
-    }
-
-    
-
     .container-card-texto {
         padding: 0rem 0.5rem;
         position: absolute;
         bottom: -0.05rem;
         left: -0.05rem;
-        border-radius: 2px;
-        background: linear-gradient(to top,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 100%);
-        border-bottom-right-radius: 2px;
-        border-bottom-left-radius: 2px;
+       /* background: linear-gradient(to top,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 100%);*/
+        background: rgba(0, 0, 0, 0.7);
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
         width: 18rem;
         height: 3.8rem;
     }
 
     .title{
+        display: inline-block;
+        margin-top: 0.6rem;
+        font-weight: 100;
+        color: white;
+        font-family: 'Avenir' !important;
+        font-size: 1.1rem;
+        margin-right: 0.5rem;
+        height: 2.65rem;
+        white-space: nowrap;
+        width: 11.08rem;
+        vertical-align: middle;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .title-qtdviews{
         display: inline-block;
         margin-top: 1.2rem;
         font-weight: 100;
@@ -31,11 +40,14 @@ shots-page{
     }
 
     .img-card{
-        background-image: url('https://www.thamesvalley.police.uk/about-us/who-we-are/departments/');
-        width: 15.99rem;
-        height: 12.4rem;
-        
-        border-radius: 2px;
+        left: -0.2%;
+        top: -0.2%;
+        object-fit: cover;
+        width: 18rem;
+        height: 19.5rem;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+        position: absolute;
     }
 
     .card{

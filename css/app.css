@@ -1,21 +1,113 @@
-shots-page .background-page {
-  background: #e6e6e6;
+.app-background-page {
+  background: #343a40;
   width: 100%;
   height: 100vh; }
+
+.center {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  background: #343a40; }
+
+.app-background {
+  background: #343a40; }
+
+.sk-cube-grid {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 5rem;
+  height: 5rem; }
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33.3%;
+  background-color: #e9ecef;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; }
+
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
+
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
+
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
+
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
+
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
+
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1); }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1); } }
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1); }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1); } }
 
 shots-page .container-card-texto {
   padding: 0rem 0.5rem;
   position: absolute;
   bottom: -0.05rem;
   left: -0.05rem;
-  border-radius: 2px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0, transparent 100%);
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
+  /* background: linear-gradient(to top,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 100%);*/
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   width: 18rem;
   height: 3.8rem; }
 
 shots-page .title {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-weight: 100;
+  color: white;
+  font-family: 'Avenir' !important;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  height: 2.65rem;
+  white-space: nowrap;
+  width: 11.08rem;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+shots-page .title-qtdviews {
   display: inline-block;
   margin-top: 1.2rem;
   font-weight: 100;
@@ -25,10 +117,14 @@ shots-page .title {
   margin-right: 0.5rem; }
 
 shots-page .img-card {
-  background-image: url("https://www.thamesvalley.police.uk/about-us/who-we-are/departments/");
-  width: 15.99rem;
-  height: 12.4rem;
-  border-radius: 2px; }
+  left: -0.2%;
+  top: -0.2%;
+  object-fit: cover;
+  width: 18rem;
+  height: 19.5rem;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  position: absolute; }
 
 shots-page .card {
   object-fit: cover;
@@ -67,5 +163,74 @@ shots-page .card:nth-child(5) {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
 
-shots-datail-page .teste {
-  color: red; }
+shots-datail-page .img {
+  width: 100%;
+  height: auto; }
+
+shots-datail-page .avatar {
+  border: 1px solid #6e7275;
+  border-radius: 50%;
+  width: 8%;
+  min-width: 4rem; }
+
+shots-datail-page .user-data {
+  margin-left: 1%;
+  display: inline-block;
+  font-weight: 100;
+  font-family: 'Avenir';
+  font-size: 1.5rem;
+  color: #6e7275; }
+
+shots-datail-page .shot-description {
+  font-weight: 100 !important;
+  font-family: 'Avenir' !important;
+  color: #6e7275 !important;
+  margin-top: 0.8rem;
+  font-size: .9rem; }
+
+shots-datail-page .text-descricao {
+  font-weight: 100 !important;
+  font-family: 'Avenir' !important;
+  color: #6e7275 !important;
+  margin-top: 0.8rem;
+  font-size: 1.2rem; }
+
+@media (min-width: 700px) {
+  shots-datail-page .card {
+    width: 62% !important; } }
+
+shots-datail-page .card {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  width: 95%;
+  height: auto;
+  background: #fff;
+  border-radius: 0.1%;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 3px 1px rgba(0, 0, 0, 0.1);
+  transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+  animation: anim .3s ease-in-out; }
+
+shots-datail-page .card-header {
+  width: 100%;
+  height: auto;
+  text-align: left; }
+
+shots-datail-page .card-footer {
+  border-top: 1px solid #a5a5a5;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  text-align: left; }
+
+@keyframes anim {
+  0% {
+    display: none;
+    opacity: 0; }
+  1% {
+    display: block;
+    opacity: 0;
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }

@@ -14,8 +14,8 @@
                 controller: 'ShotsController'
             })
 
-            .when('/shot', {
-                templateUrl: 'pages/shots/detail/shots-detail.html)',
+            .when('/shot/:id', {
+                templateUrl: 'pages/shots/detail/shots-detail.html',
                 controller: 'ShotsDetailController'
             })
 

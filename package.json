@@ -16,6 +16,7 @@
     "angular-font-awesome": "^3.1.2",
     "angular-resource": "^1.6.8",
     "angular-route": "^1.6.8",
+    "angular-sanitize": "^1.6.9",
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
     "gulp-sourcemaps": "^2.6.4",

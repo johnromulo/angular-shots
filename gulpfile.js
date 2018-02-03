@@ -16,6 +16,11 @@ let date = new Date();
 const pathProd = ["./min-js/*.js"];
 const pathDev  = [
   "./app.js",
+  "./utils/**/*.module.js",
+  "./utils/**/*.routes.js",
+  "./utils/**/*.factory.js",
+  "./utils/**/*.service.js",
+  "./utils/**/*.controller.js",
   "./pages/**/*.module.js",
   "./pages/**/*.routes.js",
   "./pages/**/*.factory.js",
@@ -24,7 +29,7 @@ const pathDev  = [
 ]
 
 gulp.task('sass',  () => {
-  return gulp.src(['./pages/**/*.scss'])
+  return gulp.src(['./app.scss','./pages/**/*.scss'])
     .pipe(concat('app.css'))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./css'));
@@ -72,7 +77,7 @@ gulp.task('index', () => {
 
 });
 
-gulp.task('genaratejs',() => {
+gulp.task('generatejs',() => {
   runSequence('clean-files','minify-js', 'index', () => {
       console.log("Fim ! :D");
   });
@@ -88,10 +93,10 @@ gulp.task('help', ()=>{
 gulp.task('default', ['help'])
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./pages/**/*.scss', ['sass']);
+  gulp.watch(['./pages/**/*.scss','./app.scss'], ['sass']);
 });
 
-gulp.task('genaratejs:watch', function () {
+gulp.task('generatejs:watch', function () {
   if(isProduction)
   gulp.watch(pathDev, ['genaratejs']);
   else

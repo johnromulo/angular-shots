@@ -2,7 +2,8 @@
     'use strict';
     
     angular.module('app',[
-        'ngRoute','ngResource',
+        'ngRoute','ngResource','ngSanitize',
+        'app.utilModule',
         'app.shotsModule'
     ])
     .run(['$rootScope',appRun])
@@ -13,7 +14,7 @@
     }
 
     function configApp($routeProvider,$locationProvider) {
-        
+        $locationProvider.hashPrefix('');
     }
 
 })();	

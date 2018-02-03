@@ -1,10 +1,9 @@
 (() => {
     'use strict';
-    angular.module('app.shotsModule',
+    angular.module('app.utilModule',
     [
         'ngRoute',
         'ngResource',
         'ngSanitize',
-        'app.utilModule'
     ]);
 })();	
