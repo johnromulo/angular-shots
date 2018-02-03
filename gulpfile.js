@@ -9,11 +9,10 @@ const argv = require('yargs').argv;
 const runSequence = require('run-sequence');
 const clean = require('gulp-clean');
  
-
 let isProduction = (argv.prod === undefined) ? false : true;
 let date = new Date();
 
-const pathProd = ["./min-js/*.js"];
+const pathProd = ["./app/min-js/*.js"];
 const pathDev  = [
   "./app/app.js",
   "./app/utils/**/*.module.js",
@@ -39,7 +38,7 @@ gulp.task('sass',  () => {
 gulp.task('clean-files', function () {
   if(isProduction){
       console.log("Removendo arquivo de minificação ...");
-      return gulp.src('./min-js/*.js')
+      return gulp.src('./app/min-js/*.js')
       .pipe(clean({force: true}))
       //.pipe(gulp.dest('../webapp/min-js/backup-min-js/'));
   }else{

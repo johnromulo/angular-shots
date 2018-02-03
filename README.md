@@ -6,7 +6,10 @@ Implementar uma aplicação completamente client-side, que consulte a API do Dri
 
 **API**: [http://developer.dribbble.com/v1/ ](http://developer.dribbble.com/v1/)
 
-## Instalaçáo
+## Demo
+    http://165.227.208.51/angular-shots/#/
+
+## Instalação
 
     $ git clone https://github.com/johnromulo/angular-shots.git && cd angular-shots
     $ npm install
@@ -17,7 +20,7 @@ Implementar uma aplicação completamente client-side, que consulte a API do Dri
     $ gulp generatejs //Para adicionar as dependencias .js ao index.html
 
 
-## Build Produçao
+## Build Produção
 
     $ gulp sass:watch //Para buildar automaticamente os arquivos de .scss para .css
     $ gulp managerjs --prod //Para Minificar os aqruivos .js e adicioná-lo ao index.html
