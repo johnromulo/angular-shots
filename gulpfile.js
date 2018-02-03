@@ -77,7 +77,7 @@ gulp.task('index', () => {
 
 });
 
-gulp.task('generatejs',() => {
+gulp.task('managerjs',() => {
   runSequence('clean-files','minify-js', 'index', () => {
       console.log("Fim ! :D");
   });
@@ -96,7 +96,7 @@ gulp.task('sass:watch', function () {
   gulp.watch(['./pages/**/*.scss','./app.scss'], ['sass']);
 });
 
-gulp.task('generatejs:watch', function () {
+gulp.task('managerjs:watch', function () {
   if(isProduction)
   gulp.watch(pathDev, ['genaratejs']);
   else
