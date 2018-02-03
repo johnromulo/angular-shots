@@ -1,0 +1,19 @@
+<shots-datail-page class="app-background">
+    <div class="app-background-page">
+        <div class="center">
+            <div ng-include="'./app/components/loading/loading.html'" ng-if="loading"></div>
+            <div class="card" id="card{{shot.id}}"  ng-if="!loading">
+                <div id="cardHeader{{shot.id}}" class="card-header">
+                    <img id="avatar{{shot.id}}" class="avatar" ng-src="{{shot.user.avatar_url}}" />
+                    <div id="name{{shot.id}}" class="user-data">{{shot.user.name}}</div>
+                </div>
+                <img id="img{{shot.id}}" class="img" src="{{shot.images.hidpi}}" />
+                <div id="cardFooter{{shot.id}}" class="card-footer">
+                    <div id="desc{{shot.id}}" class="text-descricao" ng-if="shot.description">Description</div>
+                    <div id="descBind{{shot.id}}" class="shot-description" ng-bind-html="shot.description">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</shots-datail-page>

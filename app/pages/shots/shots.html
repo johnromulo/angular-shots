@@ -1,0 +1,21 @@
+<shots-page class="app-background">
+    <div class="app-background-page">
+        <div class="center">
+            <div ng-include="'./app/components/loading/loading.html'" ng-if="loading"></div>
+            <div id="card{{$index}}" class="card" ng-repeat="shot in shots | orderBy: ['!views_count','-views_count']
+             track by $index" ng-click="editar(shot.id)" ng-if="!loading">
+                <div id="itemcard{{$index}}">
+                    <img class="img-card" ng-src="{{shot.images.normal}}">
+                    <a id="container{{$index}}" class="container-card-texto">
+                        <div id="title{{$index}}" class="title">
+                            {{shot.title}}
+                        </div>
+                        <div id="titleview{{$index}}" class="title-qtdviews">
+                            <i class="fa fa-eye" aria-hidden="true"></i> {{shot.views_count}}
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</shots-page>

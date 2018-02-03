@@ -1,0 +1,90 @@
+shots-datail-page{
+    .app-background-page{
+        //height: 130vh;
+    }
+
+    .img{
+        width: 100%;
+        height: auto;
+    }
+    .avatar{
+        border: 1px solid rgb(110, 114, 117);;
+        border-radius: 50%;
+        width: 8%;
+        min-width: 4rem;
+    }
+
+    .user-data{
+        margin-left: 1%;
+        display: inline-block;
+        font-weight: 100;
+        font-family: 'Avenir';
+        font-size: 1.5rem;
+        color: #6e7275;
+    }
+
+    .shot-description{
+        font-weight: 100 !important;
+        font-family: 'Avenir' !important;
+        color: #6e7275 !important;
+        margin-top: 0.8rem;
+        font-size: .9rem;
+    }
+
+    .text-descricao{
+        font-weight: 100 !important;
+        font-family: 'Avenir' !important;
+        color: #6e7275 !important;
+        margin-top: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    @media (min-width: 700px) { 
+        .card{
+            width: 62% !important;
+        }
+    }
+
+    .card{
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        width: 95%;
+        height: auto;
+        background: #fff;
+        border-radius: 0.1%;
+        display: inline-block;
+        position: relative;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 3px 1px rgba(0, 0, 0, 0.1);
+        transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+        animation: anim .3s ease-in-out;
+    }
+
+    .card-header{
+        width: 100%;
+        height: auto;
+        text-align: left;
+    }
+    .card-footer{
+        border-top: 1px solid #a5a5a5;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        text-align: left;
+    }
+    
+
+    @keyframes anim {
+        0% {
+          display: none;
+          opacity: 0;
+        }
+        1% {
+          display: block;
+          opacity: 0;
+          transform: scale(0);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+}
