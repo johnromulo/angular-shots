@@ -7,7 +7,7 @@ Implementar uma aplicação completamente client-side, que consulte a API do Dri
 **API**: [http://developer.dribbble.com/v1/ ](http://developer.dribbble.com/v1/)
 
 ## Demo
-    [http://165.227.208.51/angular-shots/#/ ](http://165.227.208.51/angular-shots/#/)
+   **Demo**: [http://165.227.208.51/angular-shots/#/ ](http://165.227.208.51/angular-shots/#/)
 
 ## Instalação
 
