@@ -9,7 +9,7 @@
 
     function BaseService($resource) {
 
-        var acessToken = '523956f95976a4ec8b9cd9f17a86d314126a1e1261a767e7e6465ccb8bcc6ccf';
+        var acessToken = 'e90d315594bc7d941db90544b1440ea22fecd5327e2a6f37a91977fbd0915e6c';
         var resourceUrl = 'https://api.dribbble.com/v1/'
         var resource = $resource(resourceUrl + 'shots/:id?per_page=24', { id: '@id' }, {
             'save': {
